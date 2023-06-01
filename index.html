@@ -11,51 +11,57 @@
 <body>
     <div class="main-container">
         <div class="right-container">
-            <img src="" alt="" class="bg-img">
             <div class="logo-container">
-                <img src="" alt="" class="logo">
+                <img src="/img/odin-lined.png" alt="" class="logo">             
+                <p>ODIN</p>
             </div>
             <p class="credit">Photo by <a href="https://unsplash.com/fr/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
         </div>
         <div class="left-container">
-            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2>
-            <h2>Sign up <em>now</em> to get started</h2>
-            <h2>You <em>know</em> you want to</h2>
+            <div>
+                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h3>
+                <h3>Sign up <em>now</em> to get started</h3>
+            </div>
+            <h3>You <em>know</em> you want to</h3>
             <div class="form-container">
-                <h2>Let's do this</h2>
-                <form action="#" method="post">
-                    <ul class="rigth-form-li">
+                <h3>Let's do this!</h3>
+                <form id ="myForm" action="#" method="post">
+                    <ul>
                         <li>
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" name="first_name" id="first_name">
+                            <input type="text" name="first_name" id="first_name"  required>
                         </li>
-                        <li>
-                            <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
-                        </li>
-                        <li>
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
-                        </li>
-                    </ul>
-                    <ul class="left-form-li">
                         <li>
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" name="last_name" id="last_name">
+                            <input type="text" name="last_name" id="last_name"  required>
+                        </li>
+                    </ul>
+                    <ul> 
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email"  required>
                         </li>
                         <li>
                             <label for="phone_number">PHONE NUMBER</label>
-                            <input type="tel" name="phone_number" id="phone_number">
+                            <input type="tel" name="phone_number" id="phone_number"  required>
                         </li>
+                    </ul>          
+                    <ul>
                         <li>
-                            <label for="confirm_password">PASSWORD</label>
-                            <input type="password" name="confirm_password" id="confirm_password">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                            <p class="pw-error-txt">* Passwords do not match</p>
+                        </li>                        
+                        <li>
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required>
                         </li>
                     </ul>
                 </form>
             </div>
             <div class="btn-container">
-                <button>Create Account</button>
-                <p>Already have an account? <a>Log in</a></p>
+                <button id="submitBtn" type="submit" form="myForm">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
+    </div>
